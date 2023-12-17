@@ -40,7 +40,7 @@ const ImageGrid = () => {
                 src={imageSrc}
                 alt={altText}
                 width={1080}
-                height={500}
+                height={1080}
                 placeholder="blur"
               />
             </div>
