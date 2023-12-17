@@ -47,6 +47,7 @@ export default function Home() {
       ></Image>
       <section>
         <ImageGrid />
+      </section>
     </main>
   );
 }
