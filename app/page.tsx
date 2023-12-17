@@ -1,30 +1,52 @@
 import Image from "next/image";
 import Logo from "@/public/logo.svg";
+import Bg from "@/public/bg.jpg";
+import ImageGrid from "@/components/image-grid";
 
 export default function Home() {
   return (
-    <main className="max-w-screen-lg p-6 flex flex-col gap-12 md:gap-24">
-      <Image src={Logo} alt="Zion Design Logo" className="w-24"></Image>
-      <div className="md:text-5xl pl-4 md:pl-8 border-l text-3xl text-white ">
-        <h1 className="inline underline underline-offset-2 italic hover:opacity-50">
-          <a href="/">Zion Design</a>
-        </h1>
-        <p className="inline">
-          {" "}
-          is a design and code studio investing in innovative software through
-          design and code. <span className="italic">Zion</span> was created by{" "}
-          <a
-            href="https://bridger.to"
-            className="underline underline-offset-2 italic hover:opacity-50"
-          >
-            Bridger Tower
-          </a>{" "}
-          in 2018 and has since worked with over one hundred brands.
-        </p>
+    <main className="">
+      <div className="flex h-screen max-w-screen-lg flex-col items-center justify-center">
+        <section className="flex-co flex w-fit flex-col gap-12 p-6 md:gap-24">
+          <Image src={Logo} alt="Zion Design Logo" className="w-24"></Image>
+          <div className="border-l pl-4 text-3xl text-white md:pl-8 md:text-5xl ">
+            <h1 className="inline italic underline underline-offset-2 hover:opacity-50">
+              <a href="/">Zion Design</a>
+            </h1>
+            <p className="inline">
+              {" "}
+              is a design and code studio investing in innovative software
+              through design and code. <span className="italic">Zion</span>
+              &nbsp; was created by{" "}
+              <a
+                href="https://bridger.to"
+                className="italic underline underline-offset-2 hover:opacity-50"
+              >
+                Bridger Tower
+              </a>
+              &nbsp; in 2018 and has since worked with over one hundred brands.
+            </p>
+          </div>
+          <div>
+            <h2 className="font-sans text-slate-200">
+              You can contact zion design at bridger__@__zion.surf.
+            </h2>
+            <p className="font-sans text-slate-200">
+              See some of the work below.
+            </p>
+          </div>
+        </section>
       </div>
-      <h2 className="text-gray-400 font-sans">
-        You can contact zion design at bridger__@__zion.surf.
-      </h2>
+      <Image
+        className="absolute left-0 right-0 top-0 -z-50 h-screen w-screen opacity-60"
+        src={Bg}
+        width={1280}
+        height={1280}
+        placeholder="blur"
+        alt="background of zion.surf"
+      ></Image>
+
+      <ImageGrid />
     </main>
   );
 }
