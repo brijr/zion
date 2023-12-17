@@ -2,6 +2,7 @@ import Image from "next/image";
 import Logo from "@/public/logo.svg";
 import Bg from "@/public/bg.jpg";
 import ImageGrid from "@/components/image-grid";
+import { ArrowDownIcon } from "@heroicons/react/24/solid";
 
 export default function Home() {
   return (
@@ -27,25 +28,28 @@ export default function Home() {
               &nbsp; in 2018 and has since worked with over one hundred brands.
             </p>
           </div>
-          <div>
-            <h2 className="font-sans text-slate-200">
+          <div className="font-light">
+            <h2 className="font-sans text-neutral-200">
               You can contact zion design at bridger__@__zion.surf.
             </h2>
-            <p className="font-sans text-slate-200">
-              See some of the work below.
+            <p className="flex gap-2 font-sans text-neutral-200">
+              See some of the work by Zion Design below{" "}
+              <ArrowDownIcon className="w-4" />
             </p>
           </div>
         </section>
       </div>
+
       <Image
-        className="absolute left-0 right-0 top-0 -z-50 h-screen w-screen opacity-60"
+        className="absolute left-0 right-0 top-0 -z-50 h-screen w-screen opacity-60 grayscale"
         src={Bg}
         width={1280}
         height={1280}
         placeholder="blur"
         alt="background of zion.surf"
       ></Image>
-      <section className="m-auto max-w-screen-md">
+
+      <section className="m-auto max-w-screen-md py-12">
         <ImageGrid />
       </section>
     </main>

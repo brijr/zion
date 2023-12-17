@@ -43,7 +43,7 @@ const Masonry: React.FC<MasonryProps> = ({ children }) => {
   }, [children, columns]);
 
   return (
-    <div ref={ref} className="mx-2 my-4 flex">
+    <div ref={ref} className="my-4 flex">
       {masonryColumns.map((column, index) => (
         <div key={index} className="w-full px-2 md:w-1/2 lg:w-1/3">
           {column.map((item, idx) => (

@@ -50,7 +50,7 @@ const ImageGrid = () => {
 
       {isOpen && activeImage && (
         <div
-          className="fixed inset-0 z-10 flex cursor-zoom-out items-center justify-center bg-white bg-opacity-75 backdrop-blur-md"
+          className="fixed inset-0 z-10 flex cursor-zoom-out items-center justify-center bg-neutral-800 bg-opacity-75 backdrop-blur-md"
           onClick={() => setIsOpen(false)}
         >
           <Image
