@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="flex w-screen bg-slate-900">
-      <body className={lb.className}>{children}</body>
+      <body className={`w-full ${lb.className}`}>{children}</body>
     </html>
   );
 }

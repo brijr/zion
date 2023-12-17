@@ -5,11 +5,11 @@ import ImageGrid from "@/components/image-grid";
 
 export default function Home() {
   return (
-    <main className="">
-      <div className="flex h-screen max-w-screen-lg flex-col items-center justify-center">
-        <section className="flex-co flex w-fit flex-col gap-12 p-6 md:gap-24">
+    <main className="w-full">
+      <div className="flex h-screen w-full flex-col items-center justify-center">
+        <section className="flex w-fit flex-col gap-12 p-6 md:gap-24">
           <Image src={Logo} alt="Zion Design Logo" className="w-24"></Image>
-          <div className="border-l pl-4 text-3xl text-white md:pl-8 md:text-5xl ">
+          <div className="max-w-screen-md border-l pl-4 text-3xl text-white md:pl-8 md:text-5xl ">
             <h1 className="inline italic underline underline-offset-2 hover:opacity-50">
               <a href="/">Zion Design</a>
             </h1>
@@ -45,8 +45,8 @@ export default function Home() {
         placeholder="blur"
         alt="background of zion.surf"
       ></Image>
-
-      <ImageGrid />
+      <section>
+        <ImageGrid />
     </main>
   );
 }
