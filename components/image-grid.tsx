@@ -55,7 +55,7 @@ const ImageGrid = () => {
         >
           <Image
             src={activeImage}
-            alt={`Image by ${settings.name}`}
+            alt="Design by Bridger Tower"
             width={1080}
             height={500}
             className="max-h-screen w-auto p-6 md:p-24"

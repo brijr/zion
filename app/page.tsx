@@ -45,7 +45,7 @@ export default function Home() {
         placeholder="blur"
         alt="background of zion.surf"
       ></Image>
-      <section>
+      <section className="m-auto max-w-screen-md">
         <ImageGrid />
       </section>
     </main>
