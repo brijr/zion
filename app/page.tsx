@@ -16,8 +16,9 @@ export default function Home() {
             </h1>
             <p className="inline">
               {" "}
-              is a design and code studio investing in innovative software
-              through design and code. <span className="italic">Zion</span>
+              is a design and development studio investing in innovative
+              software through design and code.{" "}
+              <span className="italic">Zion</span>
               &nbsp; was created by{" "}
               <a
                 href="https://bridger.to"
