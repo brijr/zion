@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Instrument_Serif } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 
 const lb = Instrument_Serif({
   weight: "400",
@@ -21,6 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="flex w-screen bg-neutral-900">
       <body className={`w-full ${lb.className}`}>{children}</body>
+      <Analytics />
     </html>
   );
 }
