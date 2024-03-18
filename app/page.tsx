@@ -16,7 +16,7 @@ export default function Home() {
             </h1>
             <p className="inline">
               {" "}
-              is a design and development studio investing in innovative
+              is a design and development venture investing in innovative
               software through design and code.{" "}
               <span className="italic">Zion</span>
               &nbsp; was created by{" "}
