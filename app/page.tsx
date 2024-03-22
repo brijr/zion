@@ -6,7 +6,7 @@ import { ArrowDownIcon } from "@heroicons/react/24/solid";
 
 export default function Home() {
   return (
-    <main className="w-full">
+    <main className="no-scrollbar w-full">
       <div className="flex h-screen w-full flex-col items-center justify-center">
         <section className="flex w-fit flex-col gap-12 p-6 md:gap-24">
           <Image src={Logo} alt="Zion Design Logo" className="w-24"></Image>
