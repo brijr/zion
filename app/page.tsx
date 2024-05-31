@@ -1,12 +1,10 @@
 import Image from "next/image";
 import Logo from "@/public/logo.svg";
 import Bg from "@/public/bg.jpg";
-import ImageGrid from "@/components/image-grid";
-import { ArrowDownIcon } from "@heroicons/react/24/solid";
 
 export default function Home() {
   return (
-    <main className="no-scrollbar w-full">
+    <main className="no-scrollbar w-full fade-in">
       <div className="flex h-screen w-full flex-col items-center justify-center">
         <section className="flex w-fit flex-col gap-12 p-6 md:gap-24">
           <Image src={Logo} alt="Zion Design Logo" className="w-24"></Image>
@@ -33,10 +31,6 @@ export default function Home() {
             <h2 className="font-sans text-neutral-200">
               You can contact zion design at bridger__@__zion.surf.
             </h2>
-            <p className="flex gap-2 font-sans text-neutral-200">
-              See some of the work by Zion Design below{" "}
-              <ArrowDownIcon className="w-4" />
-            </p>
           </div>
         </section>
       </div>
@@ -49,10 +43,6 @@ export default function Home() {
         placeholder="blur"
         alt="background of zion.surf"
       ></Image>
-
-      <section className="m-auto max-w-screen-md py-12">
-        <ImageGrid />
-      </section>
     </main>
   );
 }

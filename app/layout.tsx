@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="flex w-screen bg-neutral-900">
+    <html lang="en" className="flex w-screen bg-neutral-900 no-scrollbar">
       <body className={`w-full ${lb.className}`}>{children}</body>
       <Analytics />
     </html>
